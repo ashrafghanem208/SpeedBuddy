@@ -1,0 +1,422 @@
+/* restore to defaults */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Urbanist", sans-serif;
+}
+
+body{
+    background-color: #0A0D0C;
+}
+
+#container{
+    padding: 25px 90px 0 90px;
+    background: url(../Assets/images/vision-bg.png);
+}
+
+nav img{
+    width: 250px;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav div{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+nav div ul{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    align-items: center;
+}
+
+nav a{
+    color: #F7FAF9;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+nav button{
+    color: #006C68;
+    background-color: #F7FAF9;
+    border: none;
+    font-weight: bold;
+    width: 120px;
+    height: 40px;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+#hero{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#hero h1{
+    font-family: "MuseoModerno", sans-serif;
+    font-size: 3em;
+    width: 50%;
+    color: white;
+    text-align: center;
+}
+
+#hero p{
+    color: #DBE2E0;
+    font-size: 1.2em;
+    width: 60%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#hero img{
+    position: absolute;
+    bottom: -10vh;
+}
+
+#vision{
+    color: #F7FAF9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+}
+
+#vision h1{
+    font-family: "MuseoModerno", sans-serif;
+    margin-bottom: 30px;
+}
+
+#vision p{
+    width: 62%;
+    color: #DBE2E0;
+    line-height: 30px;
+    font-size: 1.2em;
+}
+
+#trees{
+    color: #DBE2E0;
+    height: 100vh;
+    background: url(../Assets/images/vision-img.png);
+    background-position: center;
+    display: flex;
+    padding: 100px;
+    flex-direction: column;
+    gap: 100px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#first, #second{
+    width: 400px;
+    font-size: 1.4em;
+}
+
+#path{
+    color: #F7FAF9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+}
+
+#path h1{
+    font-family: "MuseoModerno", sans-serif;
+    margin-bottom: 30px;
+}
+
+#path p{
+    width: 62%;
+    color: #DBE2E0;
+    line-height: 30px;
+    font-size: 1.2em;
+}
+
+.split{
+    height: 50vh;
+}
+
+#black{
+    background-color: #0A0D0C;
+}
+
+#white{
+    background-color: #EEF3F2;
+}
+
+#future{
+    background-color: #F7FAF9;
+    border-radius: 10px;
+    position: absolute;
+    top: 295%;
+    transform: translatex(-50%);
+    left: 50%;
+    width: 80%;
+    height: 90%;
+    padding: 50px 100px;
+    box-shadow: 0 0 20px rgb(124, 122, 122);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#future p{
+    color: #575A59;
+}
+
+#future h1{
+    font-family: "MuseoModerno", sans-serif;
+}
+
+.number{
+    display: flex;
+    width: 50%;
+}
+
+.count{
+    color: #66A7A4;
+    font-size: 4.4em;
+    margin-right: 20px;
+    user-select: none;
+    transform: translateY(-20px);
+}
+
+#cards{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    border: 2px solid #CCE2E1;
+    padding: 20px;
+    border-radius: 12px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card img{
+    width: 64px;
+}
+
+.card h1{
+    color: #0A0D0C;
+}
+
+.card p{
+    color: #575A59;
+}
+
+#core{
+    background-color: #EEF3F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+#core h1{
+    font-family: "MuseoModerno", sans-serif;
+    margin-bottom: 50px;
+}
+
+#book{
+    background-color: #006C68;
+    color: #F7FAF9;
+    display: flex;
+    padding: 100px;
+    gap: 120px;
+    flex-wrap: wrap;
+}
+
+#book #bookText{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#bookText h1{
+    font-family: "MuseoModerno", sans-serif;
+    font-size: 2.5em;
+}
+
+#bookText p{
+    width: 70%;
+    color: #DBE2E0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 54%;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form input, select{
+    margin-bottom: 10px;
+    background-color: #CCE2E1;
+    border: none;
+    padding: 10px;
+}
+
+form label{
+    color: #F7FAF9;
+    font-size: .9em;
+}
+
+input[type=submit]{
+    color: #006C68;
+    font-weight: bold;
+    background-color: #F7FAF9;
+    border-radius: 100px;
+    cursor: pointer;
+    width: 25%;
+    margin-top: 20px;
+    position: relative;
+    left: 75%;
+}
+
+footer{
+    background-color: #0A0D0C;
+    color: #F7FAF9;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    padding: 50px;
+}
+
+#footerDiv{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 130px;
+}
+
+#footerDiv div{
+    padding: 20px;
+
+}
+
+#footerDiv ul li{
+    list-style: none;
+    margin-top: 20px;
+    color: #F7FAF9;
+    font-size: 0.9em;
+}
+
+#footerDiv ul li a{
+    color: #F7FAF9;
+    text-decoration: none;
+}
+
+
+
+
+
+
+@media only screen and (max-width:900px) {
+    #container{
+        padding: 18px;
+    }
+
+    nav img{
+        width: 150px;
+    }
+
+    nav div ul{
+        display: none;
+    }
+
+    #hero h1{
+        font-size: 2em;
+        text-align: center;
+        width: 90%;
+    }
+
+    #hero p{
+        font-size: 1em;
+        width: 90%;
+    }
+
+    #vision{
+        padding: 20px;
+    }
+
+    #vision p{
+        width: 90%;
+    }
+
+    #path{
+        padding: 20px;
+    }
+
+    #path p{
+        width: 90%;
+    }
+
+    #first, #second{
+        width: 350px;
+    }
+
+    #future .count{
+        font-size: 2.4em !important;
+    }
+
+    #future{
+        padding: 20px;
+        top: 330%;
+    }
+
+    .number{
+        width: 100%;
+    }
+
+    #book{
+        padding: 20px;
+    }
+
+    form{
+        width: 100%;
+    }
+
+    input[type=submit]{
+        width: 100%;
+        left: 0;
+    }
+
+    #footerDiv{
+        gap: 20px;
+    }
+}

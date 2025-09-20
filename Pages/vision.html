@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- importing font from goolge fonts -->
+     <!-- museoModerno AND urbanist -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+     <!-- css usage:
+     --- font-family: "Urbanist", sans-serif;
+     --- font-family: "MuseoModerno", sans-serif; -->
+
+     <!-- main css file -->
+     <link rel="stylesheet" href="../CSS/vision.css">
+
+     <!-- favicon -->
+     <link rel="shortcut icon" href="../Assets/images/favicon.png" type="image/x-icon">
+
+    <title>Our Vision</title>
+</head>
+<body>
+    <div id="container">
+        <nav>
+            <div>
+                <img onclick="location.href = '../index.html';" style="cursor: pointer;" src="../Assets/images/Logo-white.png" alt="SpeedBuddy-Logo">
+                <ul>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="vision.html">Vision</a></li>
+                </ul>
+            </div>
+            <button onclick="location.href = 'contact.html';">Contact</button>
+        </nav>
+
+        <div id="hero">
+            <h1>Leading the Future of Sustainable Fleet Care</h1>
+            <p>Imagine a world where the road to a cleaner fleet doesn’t cost the earth, and every vehicle mirrors our commitment to sustainability.</p>
+            <img src="../Assets/images/arrowDown.png" alt="arrowdown">
+        </div>
+    </div>
+
+    <div id="vision">
+        <h1>Our Vision</h1>
+        <p>As the world shifts towards Mobility as a Service (MaaS), the demand for efficient, environmentally responsible fleet cleaning solutions grows. The traditional car wash model, with its high water usage and environmental impact, is no longer viable in this new era.</p>
+    </div>
+
+    <div id="trees">
+        <p id="first">SpeedBuddy envisions leading the car wash industry as the number one provider of sustainable, waterless car washing care. </p>
+        <p id="second">We aim to solve the environmental challenges of traditional car washes and inspire businesses to adopt eco-friendly practices that protect our planet and enhance efficiency.</p>
+        </div>
+    </div>
+
+    <div id="path">
+        <h1>The Path Forward</h1>
+        <p>We are more than just a cleaning service. We are pioneers in the industry, dedicated to research and development in mobility and AI integration. Our vision extends beyond today’s challenges, as we forge a path toward a cleaner, more sustainable future.</p>
+    </div>
+
+    <div class="split" id="black"></div>
+    <div class="split" id="white"></div>
+
+    <div id="future">
+        <h1 style="text-align: center; font-size: 2.3em;">What are we working on?</h1>
+
+        <div class="number">
+            <h1 class="count">1</h1>
+            <div>
+                <h2>Sustainable Cleaning Solutions</h2>
+                <p>Introducing cutting-edge, eco-friendly cleaning methods that conserve water and reduce environmental impact.</p>
+            </div>
+        </div>
+
+        <div class="number">
+            <h1 class="count">2</h1>
+            <div>
+                <h2>Advanced Mobility Integration</h2>
+                <p>Developing solutions that seamlessly integrate with Mobility as a Service platforms, keeping your fleet ready for the road ahead.</p>
+            </div>
+        </div>
+
+        <div class="number">
+            <h1 class="count">3</h1>
+            <div>
+                <h2>AI-Powered Quality Assurance</h2>
+                <p>Leveraging artificial intelligence to ensure every vehicle in your fleet meets the highest standards, consistently and efficiently.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="core">
+        <h1>Our Core Values</h1>
+
+        <div id="cards">
+            <div class="card">
+                <img src="../Assets/images/card-icon1.png" alt="card-icon">
+                <h2>Consistent, high-quality results</h2>
+                <p>You can count on reliable service and customer satisfaction with every wash. We prioritise quality to ensure your fleet always looks its best.</p>
+            </div>
+            <div class="card">
+                <img src="../Assets/images/card-icon2.png" alt="card-icon">
+                <h2>Convenient on-the-spot Service</h2>
+                <p>Faster and more efficient than a conventional wash — our mobile service comes to you so you can focus on your core tasks while we handle the cleaning.</p>
+            </div>
+            <div class="card">
+                <img src="../Assets/images/card-icon3.png" alt="card-icon">
+                <h2>Eco-Friendly and Safe for Vehicles</h2>
+                <p>Our fleet cleaning uses environmentally-friendly products that are gentle on your vehicles. Plus, you'll save over 150 litres of water per car washed.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="book">
+        <div id="bookText">
+            <h1>Ready to Book Your Cleaning?</h1>
+            <p>Reach out today to schedule your fleet's next cleaning or ask any questions you have.</p>
+            <p>Call 02 8007 4651 to speak to someone now.</p>
+        </div>
+
+        <form action="" method="post">
+            <div>
+                <label for="name">Name*</label>
+                <input required placeholder="John Doe" type="text" name="name">
+            </div>
+            <div id="email-phone">
+                <label for="email">Email*</label>
+                <input required type="email" name="email" placeholder="name@domain.com">
+
+                <label for="phone">Phone*</label>
+                <input required type="text" placeholder="+61 000 000 000" name="phone">
+            </div>
+            <div id="vnum">
+                <label for="numberOfVehicles">Number of Vehicles</label>
+                <input type="text" name="numberOfVehicles" placeholder="50">
+
+                <label for="datetime">Date & Time</label>
+                <input type="datetime-local">
+            </div>
+            <div>
+                <label for="address">Address</label>
+                <input type="text" name="adress" placeholder="123 Main Street, Sydney">
+            </div>
+            <div>
+                <label for="service">Service Selection</label>
+                <select name="service">
+                    <option value="Select an option">(Select an option)</option>
+                </select>
+            </div>
+            <div>
+                <label for="msg">Message or additional note</label>
+                <input type="text" name="msg" placeholder="Enter message">
+            </div>
+            <input type="submit" value="Send Enquiry" name="submit">
+        </form>
+    </div>
+
+    <footer>
+        <div id="footerDiv">
+            <img src="../Assets/images/Logo-Vertical-Slogan.png" alt="logo">
+            <div>
+                <h3>About</h3>
+                <ul>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="vision.html">Vision</a></li>
+                    <li>Refer Us</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="">Terms & Conditions</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Get in touch</h3>
+                <ul>
+                    <li>Enquire or book a clean</li>
+                    <li>Phone: 02 8007 4651</li>
+                </ul>
+            </div>
+        </div>
+        <p>© 2024 SpeedBuddy. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

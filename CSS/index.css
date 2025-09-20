@@ -1,0 +1,613 @@
+/* restore to defaults */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Urbanist", sans-serif;
+}
+
+body{
+    background-color: #F7FAF9;
+}
+
+#container{
+    padding: 25px 90px 0 90px;
+}
+
+#mnums{
+    display: none;
+}
+
+nav img{
+    width: 250px;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav div{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+nav div ul{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    align-items: center;
+}
+
+nav a{
+    color: #0A0D0C;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+nav button{
+    color: #F7FAF9;
+    background-color: #006C68;
+    border: none;
+    font-weight: bold;
+    width: 120px;
+    height: 40px;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+#hero{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+#hero img{
+    position: absolute;
+    width: 40%;
+    right: 0;
+}
+
+#hero h1{
+    font-family: "MuseoModerno", sans-serif;
+    color: #006C68;
+    font-weight: bold;
+    font-size: 4em;
+    z-index: 2;
+}
+
+#hero p{
+    font-size: 2em;
+    color: #575A59;
+    z-index: 2;
+}
+
+#hero p span{
+    font-weight: bold;
+}
+
+#hero button{
+    color: #F7FAF9;
+    background-color: #006C68;
+    border: none;
+    font-weight: bold;
+    width: 220px;
+    height: 50px;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+#hero div{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#cards{
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card{
+    border: 2px solid #CCE2E1;
+    padding: 20px;
+    border-radius: 12px;
+    width: 368px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card img{
+    width: 64px;
+}
+
+.card h1{
+    color: #0A0D0C;
+}
+
+.card p{
+    color: #575A59;
+}
+
+#sep{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sep h1{
+    font-family: "MuseoModerno", sans-serif;
+    font-size: 3em;
+}
+
+#nums{
+    display: flex;
+    justify-content: space-between;
+}
+
+#one, #two, #three{
+    display: flex;
+    width: 500px;
+}
+
+#texts h1{
+    user-select: none;
+    color: #CCE2E1;
+    font-weight: 900;
+    font-size: 148px;
+}
+
+#texts p{
+    color: #575A59;
+}
+
+#texts h3{
+    color: #0A0D0C;
+    font-weight: 900;
+    font-size: 1.4em;
+}
+
+#texts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#one div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 70px;
+}
+
+#two div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 40px;
+}
+
+#three div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 40px;
+}
+
+#images img{
+    width: 368px;
+    height: 246px;
+}
+
+#gradient{
+    background: rgb(204,226,225);
+    background: linear-gradient(0deg, rgba(204,226,225,0) 0%, rgba(204,226,225,1) 15%, rgba(204,226,225,1) 88%, rgba(204,226,225,0) 100%);
+    height: 110vh;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 290px;
+    padding-top: 70px;
+}
+
+#images{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.dot{
+    width: 24px;
+    height: 24px;
+    background-color: #006C68;
+    margin: 5px;
+    border-radius: 100px;
+}
+
+#mnums a{
+    color: #006C68;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+#nums a{
+    color: #006C68;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+#buttons{
+    display: flex;
+    width: 100%;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#buttons #normal{
+    background-color: #006C68;
+    border: none;
+    border-radius: 100px;
+    color: #F7FAF9;
+    width: 215px;
+    height: 50px;
+    font-weight: 900;
+    font-size: 1em;
+}
+
+#buttons #tp{
+    background-color: transparent;
+    border: solid 2px #006C68;
+    border-radius: 100px;
+    color: #006C68;
+    width: 215px;
+    height: 50px;
+    font-weight: 900;
+    font-size: 1em;
+}
+
+#fleet{
+    background-color: #EEF3F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 200px;
+    gap: 40px;
+    text-align: center;
+}
+
+#fleet h1{
+    font-family: "MuseoModerno", sans-serif;
+}
+
+#fleet p{
+    color: #575A59;
+    width: 70%;
+    line-height: 25px;
+    font-size: .9em;
+}
+
+#fleet a{
+    color: #006C68;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+#slide-wrapper{
+    display: grid;
+    place-items: center;
+    background-color: #eef3f2;
+    min-height: 50vh;
+}
+
+#slider{
+    display: grid;
+    place-items: center;
+    position: relative;
+    width: 90%;
+    height: 250px;
+    overflow: hidden;
+}
+
+#slider-track{
+    display: flex;
+    width: calc(250px * 16);
+    animation: scroll 40s linear infinite;
+}
+
+.slide{
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.slide img{
+    width: 100%;
+}
+
+#slider::before, #slider::after{
+    background: linear-gradient(to right, rgba(238, 243, 242, 1) 0%, rgba(238, 243, 242, 0) 100%);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 3;
+}
+
+#slider::before{
+    left: 0;
+    top: 0;
+}
+
+#slider::after{
+    right: 0;
+    top: 0;
+    transform: rotate(180deg);
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(calc(-250px * 8));
+    }
+}
+
+#book{
+    background-color: #006C68;
+    color: #F7FAF9;
+    display: flex;
+    padding: 100px;
+    gap: 120px;
+    flex-wrap: wrap;
+}
+
+#book #bookText{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#bookText h1{
+    font-family: "MuseoModerno", sans-serif;
+    font-size: 2.5em;
+}
+
+#bookText p{
+    width: 70%;
+    color: #DBE2E0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 54%;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form input, select{
+    margin-bottom: 10px;
+    background-color: #CCE2E1;
+    border: none;
+    padding: 10px;
+}
+
+form label{
+    color: #F7FAF9;
+    font-size: .9em;
+}
+
+input[type=submit]{
+    color: #006C68;
+    font-weight: bold;
+    background-color: #F7FAF9;
+    border-radius: 100px;
+    cursor: pointer;
+    width: 25%;
+    margin-top: 20px;
+    position: relative;
+    left: 75%;
+}
+
+footer{
+    background-color: #0A0D0C;
+    color: #F7FAF9;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    padding: 50px;
+}
+
+#footerDiv{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 130px;
+}
+
+#footerDiv div{
+    padding: 20px;
+
+}
+
+#footerDiv ul li{
+    list-style: none;
+    margin-top: 20px;
+    color: #F7FAF9;
+    font-size: 0.9em;
+}
+
+#footerDiv ul li a{
+    color: #F7FAF9;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width:900px) {
+    #container{
+        padding: 18px;
+    }
+
+    nav img{
+        width: 150px;
+    }
+
+    nav div ul{
+        display: none;
+    }
+
+    #hero h1{
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    #hero p{
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    #hero div{
+        justify-content: center;
+        align-items: center;
+    }
+
+    #hero img{
+        top: 72%;
+        width: 300px;
+    }
+
+    #cards{
+        margin-top: 100px;
+    }
+
+    #sep{
+        margin-top: 500px;
+    }
+
+    #sep h1{
+        font-size: 2.3em;
+    }
+
+    #nums{
+        display: none;
+    }
+
+    #mnums{
+        display: flex;
+    }
+
+    #mone div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-left: 40px;
+        margin-top: 13px;
+        margin-bottom: 50px;
+    }
+    
+    #mtwo div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-left: 50px;
+        margin-top: 13px;
+        margin-bottom: 50px;
+    }
+    
+    #mthree div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-left: 40px;
+        margin-top: 13px;
+        margin-bottom: 50px;
+    }
+
+    
+    #mtexts h1{
+        user-select: none;
+        color: #CCE2E1;
+        font-weight: 900;
+        font-size: 64px;
+        position: absolute;
+    }
+    
+    #mtexts p{
+        color: #575A59;
+        width: 250px;
+        padding: 10px 0 10px 0;
+    }
+    
+    #mtexts h3{
+        color: #0A0D0C;
+        font-weight: 900;
+        font-size: 1.4em;
+    }
+
+    #mtexts img{
+        width: 328px;
+        height: 219px;
+    }
+
+    #fleet{
+        padding: 20px 0 0 0;
+    }
+
+    #fleet h1{
+        font-size: 1.2em;
+    }
+
+    #fleet img{
+        width: 90%;
+    }
+
+    #book{
+        padding: 20px;
+    }
+
+    form{
+        width: 100%;
+    }
+
+    input[type=submit]{
+        width: 100%;
+        left: 0;
+    }
+
+    #footerDiv{
+        gap: 20px;
+    }
+}

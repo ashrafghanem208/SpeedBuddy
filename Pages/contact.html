@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- importing font from goolge fonts -->
+     <!-- museoModerno AND urbanist -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+     <!-- css usage:
+     --- font-family: "Urbanist", sans-serif;
+     --- font-family: "MuseoModerno", sans-serif; -->
+
+     <!-- main css file -->
+     <link rel="stylesheet" href="../CSS/contact.css">
+
+     <!-- favicon -->
+     <link rel="shortcut icon" href="../Assets/images/favicon.png" type="image/x-icon">
+
+    <title>Contact Us</title>
+</head>
+<body>
+    <div id="container">
+        <nav>
+            <div>
+                <img onclick="location.href = '../index.html';" style="cursor: pointer;" src="../Assets/images/logo-colored.png" alt="SpeedBuddy-Logo">
+                <ul>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="vision.html">Vision</a></li>
+                </ul>
+            </div>
+            <button onclick="location.href = 'contact.html';">Contact</button>
+        </nav>
+
+        <div id="texts">
+            <h1>Let's Keep Your Fleet Shining</h1>
+            <p>Reach out today to schedule your fleet's next cleaning or ask any questions you have. One of our friendly staff will get back to you as soon as possible. </p>
+            <p>If you would like to speak to someone now, please call 02 8007 4651.</p>
+            <img draggable="false" src="../Assets/images/star.png" alt="star">
+        </div>
+
+        <form action="" method="post">
+            <div>
+                <label for="name">Name*</label>
+                <input required placeholder="John Doe" type="text" name="name">
+            </div>
+            <div id="email-phone">
+                <label for="email">Email*</label>
+                <input required type="email" name="email" placeholder="name@domain.com">
+
+                <label for="phone">Phone*</label>
+                <input required type="text" placeholder="+61 000 000 000" name="phone">
+            </div>
+            <div id="vnum">
+                <label for="numberOfVehicles">Number of Vehicles</label>
+                <input type="text" name="numberOfVehicles" placeholder="50">
+
+                <label for="datetime">Date & Time</label>
+                <input type="datetime-local">
+            </div>
+            <div>
+                <label for="address">Address</label>
+                <input type="text" name="adress" placeholder="123 Main Street, Sydney">
+            </div>
+            <div>
+                <label for="service">Service Selection</label>
+                <select name="service">
+                    <option value="Select an option">(Select an option)</option>
+                </select>
+            </div>
+            <!-- <div id="selection">
+                <div>
+                    <p>Do you know which cleaning service you’re after?</p>
+                    <input type="radio" name="sel"><label></label>
+                    <input type="radio" name="sel">
+                    <input type="radio" name="sel">
+                    <input type="radio" name="sel">
+                    <input type="radio" name="sel">
+                    <input type="radio" name="sel">
+                </div>
+                <div>
+                    <p>Inclusions:</p>
+                    <p>✓ Tire Check</p>
+                    <p>✓ External Clean</p>
+                    <p>✓ Internal Clean</p>
+                    <p>✓ Wiper Fluid</p>
+                    <p>✓ Touch Points Sanitisation</p>
+                    <p>✓ Water level check and refill</p>
+                </div>
+            </div> -->
+            <div>
+                <label for="msg">Message or additional note</label>
+                <input type="text" name="msg" placeholder="Enter message">
+            </div>
+            <input type="submit" value="Send Enquiry" name="submit">
+        </form>
+    </div>
+
+    <img src="../Assets/images/star2.png" alt="star" id="star2">
+
+    <footer>
+        <div id="footerDiv">
+            <img src="../Assets/images/Logo-Vertical-Slogan.png" alt="logo">
+            <div>
+                <h3>About</h3>
+                <ul>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="vision.html">Vision</a></li>
+                    <li>Refer Us</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="">Terms & Conditions</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Get in touch</h3>
+                <ul>
+                    <li>Enquire or book a clean</li>
+                    <li>Phone: 02 8007 4651</li>
+                </ul>
+            </div>
+        </div>
+        <p>© 2024 SpeedBuddy. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

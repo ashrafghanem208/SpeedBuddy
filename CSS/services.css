@@ -1,0 +1,563 @@
+/* restore to defaults */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Urbanist", sans-serif;
+}
+
+body{
+    background-color: #F7FAF9;
+}
+
+#container{
+    padding: 25px 90px 0 90px;
+    background: url(../Assets/images/services-hero.png);
+}
+
+nav img{
+    width: 250px;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav div{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+nav div ul{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    align-items: center;
+}
+
+nav a{
+    color: #F7FAF9;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+nav button{
+    color: #006C68;
+    background-color: #F7FAF9;
+    border: none;
+    font-weight: bold;
+    width: 120px;
+    height: 40px;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+#hero{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#hero h1{
+    font-family: "MuseoModerno", sans-serif;
+    font-size: 3em;
+    width: 70%;
+    color: white;
+    text-align: center;
+}
+
+#buttons{
+    display: flex;
+    width: 100%;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#buttons #normal{
+    background-color: #F7FAF9;
+    border: none;
+    border-radius: 100px;
+    color: #006C68;
+    width: 215px;
+    height: 50px;
+    font-weight: 900;
+    font-size: 1em;
+}
+
+#buttons #tp{
+    background-color: transparent;
+    border: solid 2px #F7FAF9;
+    border-radius: 100px;
+    color: #F7FAF9;
+    width: 215px;
+    height: 50px;
+    font-weight: 900;
+    font-size: 1em;
+}
+
+#buttons img{
+    position: absolute;
+    left: 10%;
+}
+
+#star2{
+    position: absolute;
+    top: 41.6%;
+}
+
+#plans{
+    padding: 90px 90px 0 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#plans-text{
+    width: 60%;
+    text-align: center;
+}
+
+#plans-text h1{
+    font-family: "MuseoModerno", sans-serif;
+    margin-bottom: 15px;
+    color: #0A0D0C;
+}
+
+#plans-text p{
+    color: #575A59;
+    margin-bottom: 150px;
+}
+
+#features{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.cl{
+    display: flex;
+}
+
+#ftitles{
+    justify-content: end;
+    gap: 90px;
+    font-size: .8em;
+    text-align: center;
+}
+
+#ftitles h1{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px 20px 0 0;
+}
+
+.text p{
+    font-size: .8em;
+}
+
+#fbuttons{
+    justify-content: end;
+    gap: 11%;
+}
+
+.col{
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.col .text{
+    width: 165px;
+}
+
+.light{
+    background-color: #EEF3F2;
+}
+
+.dark{
+    background-color: #DBE2E0;
+}
+
+span{
+    color: #006C68;
+    font-weight: 900;
+    user-select: none;
+    font-size: 1.2em;
+    padding-right: 10%;
+}
+
+#fbuttons button{
+    background-color: #006C68;
+    color: #F7FAF9;
+    border-radius: 100px;
+    border: none;
+    padding: 10px 30px;
+    margin-right: 5%;
+    margin-top: 50px;
+}
+
+#most-popular{
+    border: 3px solid #0A0D0C;
+    border-bottom: none;
+    border-radius: 0 !important;
+}
+
+#most-popular::before{
+    content: 'Most Popular';
+    position: absolute;
+    font-size: .8em;
+    transform: translate(-11%, -130%);
+    background-color: #0A0D0C;
+    color: white;
+    width: 15.2%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cleaning{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 60vh;
+}
+
+#cleaningWrapper{
+    background-color: #EEF3F2;
+    width: 85%;
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#cleaningTexts{
+    width: 300px;
+}
+
+#cleaningTexts h1{
+    font-size: 1.7em;
+    margin-bottom: 20px;
+}
+
+#cleaningTexts p{
+    color: #575A59;
+}
+
+.cleaningCard{
+    background-color: white;
+    padding: 20px 40px;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cleaningCard ul li{
+    list-style: none;
+}
+
+.cleaningCard button{
+    background-color: #006C68;
+    color: #F7FAF9;
+    border: none;
+    border-radius: 100px;
+    padding: 10px;
+}
+
+#whyUs{
+    background-color: #EEF3F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+#cards{
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.card{
+    padding: 20px;
+    border-radius: 12px;
+    width: 368px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card img{
+    width: 64px;
+    opacity: .3;
+}
+
+.card h1{
+    color: #0A0D0C;
+}
+
+.card p{
+    color: #575A59;
+}
+
+#learnMore{
+    background-color: #EEF3F2;
+    padding: 100px;
+}
+
+#learnWrapper{
+    background-color: #F7FAF9;
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: 0 0 20px rgb(163, 163, 163);
+}
+
+#learnText{
+    width: 400px;
+}
+
+#learnText h1{
+    color: #0A0D0C;
+}
+
+#learnText p{
+    color: #575A59;
+    margin-top: 40px;
+}
+
+#learnLink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#learnLink a{
+    width: 170px;
+    text-align: end;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #66A7A4;
+    margin-right: 20px;
+}
+
+#book{
+    background-color: #006C68;
+    color: #F7FAF9;
+    display: flex;
+    padding: 100px;
+    gap: 120px;
+    flex-wrap: wrap;
+}
+
+#book #bookText{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#bookText h1{
+    font-family: "MuseoModerno", sans-serif;
+    font-size: 2.5em;
+}
+
+#bookText p{
+    width: 70%;
+    color: #DBE2E0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 54%;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form input, select{
+    margin-bottom: 10px;
+    background-color: #CCE2E1;
+    border: none;
+    padding: 10px;
+}
+
+form label{
+    color: #F7FAF9;
+    font-size: .9em;
+}
+
+input[type=submit]{
+    color: #006C68;
+    font-weight: bold;
+    background-color: #F7FAF9;
+    border-radius: 100px;
+    cursor: pointer;
+    width: 25%;
+    margin-top: 20px;
+    position: relative;
+    left: 75%;
+}
+
+footer{
+    background-color: #0A0D0C;
+    color: #F7FAF9;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    padding: 50px;
+}
+
+#footerDiv{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 130px;
+}
+
+#footerDiv div{
+    padding: 20px;
+
+}
+
+#footerDiv ul li{
+    list-style: none;
+    margin-top: 20px;
+    color: #F7FAF9;
+    font-size: 0.9em;
+}
+
+#footerDiv ul li a{
+    color: #F7FAF9;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:900px) {
+    #container{
+        padding: 18px;
+    }
+
+    nav img{
+        width: 150px;
+    }
+
+    nav div ul{
+        display: none;
+    }
+
+    #hero h1{
+        font-size: 2em;
+        text-align: center;
+    }
+
+    #buttons img{
+        display: none;
+    }
+
+    #star2{
+        width: 50%;
+        top: 73%;
+    }
+
+    #features{
+        padding: 0;
+        width: 100%;
+    }
+
+    #features div{
+        width: 100%;
+    }
+
+    #plans{
+        padding: 20% 0;
+    }
+
+    #plans-text{
+        width: 80%;
+    }
+
+    #cleaning{
+        padding: 0;
+        margin-top: 200px;
+    }
+
+    #cleaningWrapper{
+        gap: 20px;
+    }
+
+    #whyUs{
+        margin-top: 70%;
+    }
+
+    #cards{
+        height: auto;
+    }
+
+    #learnMore{
+        padding: 10px;
+    }
+
+    #learnText h1{
+        font-size: 1.5em;
+    }
+
+    #learnWrapper{
+        gap: 20px;
+    }
+
+    #book{
+        padding: 20px;
+    }
+
+    form{
+        width: 100%;
+    }
+
+    input[type=submit]{
+        width: 100%;
+        left: 0;
+    }
+
+    #footerDiv{
+        gap: 20px;
+    }
+}
